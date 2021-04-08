@@ -11,4 +11,12 @@ class test{
         assertEquals(12, multipleImpByLoop.implement(3,4));
         assertEquals(20, multipleImpByLoop.implement(4,5));
     }
+
+    @Test
+    void testMutipleImpRecursive() {
+
+        MultipleImpRecursive multipleImpRecursive = new MultipleImpRecursive();
+        assertEquals(12, multipleImpRecursive.implement(3,4));
+        assertEquals(20, multipleImpRecursive.implement(4,5));
+    }
 }

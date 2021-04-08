@@ -1,3 +1,4 @@
 package com.company;
 
-public abstract class MultipleImp implements Imp{}
+public abstract class MultipleImp implements Imp{
+}

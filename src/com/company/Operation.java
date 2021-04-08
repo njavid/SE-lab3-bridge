@@ -6,6 +6,7 @@ public abstract class Operation {
     Operation(Imp imp){
         this.imp = imp;
     }
+    void setImp(Imp imp){this.imp=imp;}
     int operate(int x, int y){
         return imp.implement(x,y);
     }

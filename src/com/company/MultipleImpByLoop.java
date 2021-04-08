@@ -9,4 +9,5 @@ public class MultipleImpByLoop extends MultipleImp {
         }
         return result;
     }
+
 }

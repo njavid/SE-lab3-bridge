@@ -6,8 +6,6 @@ public abstract class PowerImp implements Imp{
     PowerImp(MultipleImp multipleImp){
         this.multipleImp = multipleImp;
     }
+    public abstract void setMultipleImp(MultipleImp imp);
 
-    public void setMultipleImp(MultipleImp multipleImp) {
-        this.multipleImp = multipleImp;
-    }
 }

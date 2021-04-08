@@ -51,4 +51,12 @@ class test{
         assertEquals(16, powerByRecursion.implement(2,4));
         assertEquals(1, powerByRecursion.implement(1,5));
     }
+
+    @Test
+    void testPowerOperation() {
+
+        PowerOpr power1 = new PowerOpr(new PowerByRecursion(new MultipleImpRecursive()));
+        assertEquals(16, power1.operate(2,4));
+        assertEquals(1, power1.operate(1,5));
+    }
 }

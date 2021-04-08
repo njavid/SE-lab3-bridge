@@ -54,9 +54,33 @@ class test{
 
     @Test
     void testPowerOperation() {
-
         PowerOpr power1 = new PowerOpr(new PowerByRecursion(new MultipleImpRecursive()));
         assertEquals(16, power1.operate(2,4));
         assertEquals(1, power1.operate(1,5));
+
+        PowerOpr power2 = new PowerOpr(new PowerByRecursion(new MultipleImpByLoop()));
+        assertEquals(16, power2.operate(2,4));
+        assertEquals(1, power2.operate(1,5));
+
+        PowerOpr power3 = new PowerOpr(new PowerByLoop(new MultipleImpRecursive()));
+        assertEquals(16, power3.operate(2,4));
+        assertEquals(1, power3.operate(1,5));
+
+        PowerOpr power4 = new PowerOpr(new PowerByLoop(new MultipleImpRecursive()));
+        assertEquals(16, power4.operate(2,4));
+        assertEquals(1, power4.operate(1,5));
+    }
+
+    @Test
+    void testSetters(){
+        PowerOpr power = new PowerOpr(new PowerByRecursion(new MultipleImpRecursive()));
+        assertEquals(16, power.operate(2,4));
+
+        power.setImp(new PowerByLoop(new MultipleImpRecursive()));
+        assertEquals(27, power.operate(3,3));
+
+        power.getPowerImp().setMultipleImp(new MultipleImpByLoop());
+        assertEquals(64, power.operate(4,3));
+
     }
 }

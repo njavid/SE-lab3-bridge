@@ -14,5 +14,9 @@ public class PowerByRecursion extends PowerImp{
             return this.multipleImp.implement(implement(x, y-1), x);
         }
     }
+
+    public void setMultipleImp(MultipleImp imp) {
+        this.multipleImp = imp;
+    }
 }
 

@@ -13,5 +13,12 @@ public class PowerByLoop extends PowerImp{
         }
         return result;
     }
+
+    @Override
+    public void setMultipleImp(MultipleImp imp) {
+        this.multipleImp = imp;
+    }
+
+
 }
 

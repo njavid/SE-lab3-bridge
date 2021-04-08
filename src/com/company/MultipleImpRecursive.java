@@ -10,4 +10,7 @@ public class MultipleImpRecursive extends MultipleImp{
             return x + implement(x, y-1);
         }
     }
+
+    public void setMultipleImp(Imp imp) {
+    }
 }

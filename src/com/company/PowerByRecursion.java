@@ -7,7 +7,12 @@ public class PowerByRecursion extends PowerImp{
 
     @Override
     public int implement(int x, int y) {
-        return 0;
+        if (y == 1){
+            return x;
+        }
+        else{
+            return this.multipleImp.implement(implement(x, y-1), x);
+        }
     }
 }
 

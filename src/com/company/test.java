@@ -35,4 +35,20 @@ class test{
         assertEquals(16, powerByLoop.implement(2,4));
         assertEquals(1, powerByLoop.implement(1,5));
     }
+
+    @Test
+    void testPowerImpByRecursionAndMultiplyByLoop() {
+
+        PowerByRecursion powerByRecursion = new PowerByRecursion(new MultipleImpByLoop());
+        assertEquals(16, powerByRecursion.implement(2,4));
+        assertEquals(1, powerByRecursion.implement(1,5));
+    }
+
+    @Test
+    void testPowerImpByRecursionAndMultiplyByRecursion() {
+
+        PowerByRecursion powerByRecursion = new PowerByRecursion(new MultipleImpRecursive());
+        assertEquals(16, powerByRecursion.implement(2,4));
+        assertEquals(1, powerByRecursion.implement(1,5));
+    }
 }
